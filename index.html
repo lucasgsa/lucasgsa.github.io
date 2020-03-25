@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="styles/headerStyle.css" />
+        <link rel="stylesheet" type="text/css" href="styles/menuStyle.css" />
+        <link rel="stylesheet" type="text/css" href="styles/aboutMeStyle.css" />
+        <link rel="stylesheet" type="text/css" href="styles/meusProjetosStyle.css" />
+
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="headerMain">
+            <img id="menuIcon" class="menuIcon" src="images/iconMenu.png" />
+            <div class="iconsDiv">
+                <a href="https://www.github.com/lucasgsa" target="_blank"><img class="socialIcon" src="images/iconGithub.png"/> </a>
+                <a href="https://www.github.com/lucasgsa" target="_blank"><img class="socialIcon" src="images/iconGithub.png"/> </a>
+                <a href="https://www.github.com/lucasgsa" target="_blank"><img class="socialIcon" src="images/iconGithub.png"/> </a>
+            </div>
+        </header>
+
+        <section id="menuSection">
+            <nav>
+                <div class="leftMenu" id="app">
+                    <button id="btn_aboutMe" class="btn">Sobre mim</button>
+                    <button id="btn_meusProjetos" class="btn">Meus Projetos</button>
+                    <button id="btn_expMe" class="btn">Experiências</button>
+            </nav>
+        </section>
+
+
+        <main>
+            <section id="sectionAboutMe">
+                <h1 id="titulo" data-aos="flip-up" data-aos-mirror="true" data-aos-duration="5000">
+                    Sobre mim:
+                </h1>
+                <div class="aboutMe_top">
+                    <div id="minhasInformacoes" data-aos="slide-right" data-aos-mirror="true" data-aos-duration="2000">
+                        <img id="avatar" src="images/avatar.jpg"/>
+                        <h2>Lucas Gabriel</h2>
+                        <h7>18 anos - 3º periodo</h7>
+                    </div>
+                </div>
+        
+                <div class="aboutMe_caracteristicas" data-aos="slide-left" data-aos-mirror="true" data-aos-duration="2000">
+                    <h3>Línguas:</h3>
+                        <ul>
+                        <li>Português (Nativo)</li>
+                        <li>Inglês (Intermediário)</li>
+                        </ul>
+        
+                    <h3>Linguagens de programação:</h3>
+                    <ul>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>Javascript</li>
+                        <li>C#</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="sectionMeusProjetos">
+                <h1 id="titulo">
+                    Meus Projetos
+                </h1>
+            </section>
+        </main>
+
+        <script type="text/javascript" src="scripts/menuScript.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init()
+        </script>
+    </body>
+</html>

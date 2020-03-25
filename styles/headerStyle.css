@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.headerMain {
+    position: absolute;
+    display: flex;
+    background-color: rgb(155, 155, 155);
+    width: 100%;
+    height: 8vh;
+    justify-content: space-between;
+    flex-direction: row;
+    z-index: 2;
+}
+
+.headerMain #menuIcon {
+    width: 8vh;
+    height: 8vh;
+    cursor: pointer;
+}
+
+.headerMain .iconsDiv {
+    display: flex;
+    align-items: center;
+}
+
+.iconsDiv .socialIcon {
+    width: 4vh;
+    height: 4vh;
+    cursor: pointer;
+    margin-right: 2vh;
+    margin-left: 2vh;
+}
+
+@media only screen and (min-height:1080px) and (min-width:720px) {
+    .headerMain {
+        height: 5vh;
+    }
+    .headerMain #menuIcon {
+        width: 5vh;
+        height: 5vh;
+    }
+    .iconsDiv .socialIcon {
+        width: 3vh;
+        height: 3vh;
+        margin-right: 1vh;
+        margin-left: 1vh;
+    }
+}
