@@ -5,6 +5,7 @@
     display: flexbox;
     padding-top: 100px;
     padding-bottom: 100px;
+    overflow: hidden;
 }
 
 #titulo {
