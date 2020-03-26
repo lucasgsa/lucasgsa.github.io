@@ -13,6 +13,7 @@
     flex-direction: row;
     z-index: 2;
     overflow: hidden;
+    flex-wrap: wrap;
 }
 
 .headerMain #menuIcon {

@@ -1,7 +1,50 @@
 #sectionMeusProjetos {
-    background-color: rgb(52, 172, 172);
-    width: 100%;
+    background-color: rgb(91, 91, 91);
     height: 100%;
-    display: flexbox;
+    width: 90%;
+    display: flex;
     overflow: hidden;
+    border-radius: 100px;
+    flex-direction: column;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+.projetoDiv {
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+    border-radius: 50px;
+}
+
+.projetoDivButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.projetoDivButton img{
+    transition: all 0.8s;
+}
+
+.projetoDivText {
+    text-align: center;
+    height: 0px;
+    font-size: 0px;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+@media only screen and (min-height:1080px) and (min-width:720px) {
+    .projetoDivButton {
+        font-size: 60px;
+    }
 }

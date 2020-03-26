@@ -3,6 +3,7 @@
 <html>
     <head>
         <meta charset="UTF-8"/>
+        <title>Meu Portifólio</title>
         <link rel="stylesheet" type="text/css" href="styles/headerStyle.css" />
         <link rel="stylesheet" type="text/css" href="styles/menuStyle.css" />
         <link rel="stylesheet" type="text/css" href="styles/aboutMeStyle.css" />
@@ -23,11 +24,15 @@
 
         <section id="menuSection">
             <nav>
-                <div class="leftMenu" id="app">
+                <div class="leftMenu">
                     <button id="btn_aboutMe" class="btn">Sobre mim</button>
                     <button id="btn_meusProjetos" class="btn">Meus Projetos</button>
                     <button id="btn_expMe" class="btn">Experiências</button>
             </nav>
+            <p class="menuText">
+                Bem-vindo ao meu portifólio virtual!<br>
+                Aqui você pode ver informações sobre mim, meus contatos e um pouco das minhas preferências.
+            </p>
         </section>
 
 
@@ -61,17 +66,85 @@
                 </div>
             </section>
 
-            <section id="sectionMeusProjetos">
+            <section id="sectionMeusProjetos" data-aos="zoom-in" data-aos-mirror="true" data-aos-duration="1000">
                 <h1 id="titulo">
                     Meus Projetos
                 </h1>
+
+                <div class="projetoDiv" data-aos="flip-down" data-aos-mirror="true" data-aos-duration="1000">
+                    <div class="projetoDivButton" id="button_musicPlayer">
+                        <img src="images/arrow_right.png" id="arrow_musicPlayer"/>
+                        Android MusicPlayer
+                    </div>
+                    <div id="text_musicPlayer" class="projetoDivText">
+                        Criado com a intenção de aprender mais sobre como programar para android, ainda tem muitos bugs a resolver, mas aprendi sobre como é o funcionamento de Intents
+                        no android, BroadcastReceivers, Activitys etc.
+                        Além de começar a aprender a construir README melhores.
+                        <br><br>
+                        Maior Aprendizado: Usar services em foreground e personalizar notificações no android.<br>
+                        Linguagens: Java e XML
+                        <br><br><a target="_blank" href="https://github.com/lucasgsa/AndroidMusicPlayerKPNz/blob/master/README.md">Link para repositório.</a>
+                        <br><br>
+                    </div>
+                </div>
+
+                <div class="projetoDiv" data-aos="flip-down" data-aos-mirror="true" data-aos-duration="2000">
+                    <div class="projetoDivButton" id="button_geradorFrisos">
+                        <img src="images/arrow_right.png" id="arrow_geradorFrisos"/>
+                        Gerador de Frisos
+                    </div>
+                    <div id="text_geradorFrisos" class="projetoDivText">
+                        Fiz inicialmente como atividade extra da cadeira FMCC2 para o conteúdo de vetores.<br>
+                        Aprendi tanto como manipular imagens de forma mais efetiva, quanto a salvar tudo isso em pastas e verificar possíveis erros<br>
+                        Além de conhecer mais sobre uso de comandos em script shell usando ./build.sh e ./run.sh
+                        <br><br>
+                        Maior Aprendizado: Aprendi a manipular imagens passadas, modificar e salvar na pasta dita pelo usuário.<br>
+                        Linguagens: Python e Shell
+                        <br><br><a target="_blank" href="https://github.com/lucasgsa/GeradorFrisos/blob/master/README.md">Link para repositório.</a>
+                        <br><br>
+                    </div>
+                </div>
+
+                
+                <div class="projetoDiv" data-aos="flip-down" data-aos-mirror="true" data-aos-duration="3000">
+                    <div class="projetoDivButton" id="button_classicPotatoBoss">
+                        <img src="images/arrow_right.png" id="arrow_classicPotatoBoss"/>
+                        Classic Potato Boss
+                    </div>
+                    <div id="text_classicPotatoBoss" class="projetoDivText">
+                        Esse foi um dos primeiros jogos/projetos que me dediquei a fazer, no primeiro período de universidade, na época eu não sabia quase nada de design de código.<br>
+                        Sinceramente me orgulho bastante, principalmente por não ter desistido facilmente, já que era cheio de bugs, mas sempre me dedicava a resolve-los.
+                        <br><br>
+                        Maior Aprendizado: Aprendi a não desistir facilmente do que estou fazendo e sempre pesquisar em fóruns e livros.
+                        <br><br><a target="_blank" href="https://github.com/lucasgsa/ClassicPotatoBoss">Link para repositório.</a>
+                        <br><br>
+                    </div>
+                </div>
+
+                <div class="projetoDiv" data-aos="flip-down" data-aos-mirror="true" data-aos-duration="3000">
+                    <div class="projetoDivButton" id="button_pooPotatoBoss">
+                        <img src="images/arrow_right.png" id="arrow_pooPotatoBoss"/>
+                        Poo Potato Boss
+                    </div>
+                    <div id="text_pooPotatoBoss" class="projetoDivText">
+                        Primeira tentativa de usar o paradigma de orientação a objeto para aprender.<br>
+                        Aprendi muito, principalmente com minha tentativa de criar animações do zero, sem usar threads(eu não sabia como funcionava na época).<br>
+                        Sinceramente é um jogo que tinha muito para continuar, mas por ter muitas coisas da universidade para fazer acabei deixando de lado e esquecendo.
+                        <br><br>
+                        Maior Aprendizado: Fiquei orgulhoso por ter feito tudo isso do zero com o que eu mesmo imaginava, pesquisei poucas coisas, mas se aprendi uma coisa foi que threads é uma coisa essêncial, fazer esse jogo sem usar foi muito mais complicado.
+                        <br><br><a target="_blank" href="https://github.com/lucasgsa/PotatoBoss">Link para repositório.</a>
+                        <br><br>
+                    </div>
+                </div>
+
             </section>
         </main>
 
         <script type="text/javascript" src="scripts/menuScript.js"></script>
+        <script type="text/javascript" src="scripts/meusProjetosScript.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
-            AOS.init()
+            AOS.init();
         </script>
     </body>
 </html>

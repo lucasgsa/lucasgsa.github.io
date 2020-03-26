@@ -1,5 +1,4 @@
 function showMenu(){
-    console.log("a");
     var leftMenu = document.getElementById("menuSection");
     var iconMenu = document.getElementById("menuIcon");
     if (leftMenu.style.marginLeft === "0px"){
@@ -13,13 +12,20 @@ function showMenu(){
     }
 }
 
-function scrollTo(to){
-    document.getElementById(to).scrollIntoView();
+function alertNao() {
+    alert("Não implementado ainda.");
 }
 
-document.getElementById("btn_aboutMe").addEventListener("click", () => scrollTo("sectionAboutMe"));
-document.getElementById("btn_expMe").addEventListener("click", () => scrollTo("div_experiencias"));
-document.getElementById("btn_meusProjetos").addEventListener("click", () => scrollTo("sectionMeusProjetos"));
+function scrollingTo(to){
+    window.scrollTo(0, document.getElementById(to).offsetTop);
+}
+
+document.getElementById("btn_aboutMe").addEventListener("click", () => scrollingTo("sectionAboutMe"));
+
+//document.getElementById("btn_expMe").addEventListener("click", () => scrollingTo("div_experiencias"));
+document.getElementById("btn_expMe").addEventListener("click", () => alertNao());
+
+document.getElementById("btn_meusProjetos").addEventListener("click", () => scrollingTo("sectionMeusProjetos"));
 
 
 document.getElementById("menuIcon").onclick = showMenu;
