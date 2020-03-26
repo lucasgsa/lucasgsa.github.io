@@ -17,14 +17,16 @@
 #avatar {
     width: 15%;
     height: 15%;
-    margin-left: 25%;
-    margin-right: 25%;
     border-radius: 100%;
 }
 
 #minhasInformacoes {
     text-align: center;
+    margin-left: 5%;
     font-size: 30px;
+    margin-right: 5%;
+    margin-left: -5%;
+    padding-left: 10%;
     background-color: rgb(111, 111, 111);
     border-top-right-radius: 100px;
     border-bottom-right-radius: 100px;
