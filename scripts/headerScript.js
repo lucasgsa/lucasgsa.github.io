@@ -1,14 +1,14 @@
 var lastScrollPosition = 0;
+var header = document.querySelector("header");
 
-function calculaScroll(){
+function calculaDeltaScroll(){
     var deltaX = document.documentElement.scrollTop - lastScrollPosition;
     lastScrollPosition = document.documentElement.scrollTop;
     return deltaX;
 }
 
 function atualizarHeader(){
-    var header = document.querySelector("header");
-    if (calculaScroll() >= 0){
+    if (calculaDeltaScroll() >= 0){
         header.style.top = "-8vh";
         if (menuIsOpen()){
             showMenu();

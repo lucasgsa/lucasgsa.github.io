@@ -1,6 +1,7 @@
+var texto = document.getElementById("text_"+textId);
+var arrow = document.getElementById("arrow_"+textId);
+
 function switchArrow(textId){
-    var texto = document.getElementById("text_"+textId);
-    var arrow = document.getElementById("arrow_"+textId);
     console.log(texto.style.height);
     if (texto.style.height == "0px" | texto.style.height == ""){
         if (window.matchMedia("only screen and (min-height:1080px) and (min-width:720px)").matches){
