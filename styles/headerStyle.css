@@ -26,6 +26,7 @@
 .headerMain .iconsDiv {
     display: flex;
     align-items: center;
+    background: linear-gradient(to left, rgb(39, 39, 39), rgb(155, 155, 155));
 }
 
 .iconsDiv .socialIcon {
@@ -35,6 +36,11 @@
     margin-right: 2vh;
     margin-left: 2vh;
 }
+.iconsDiv .socialIcon:hover {
+    width: 6vh;
+    height: 6vh;
+}
+
 
 @media only screen and (min-height:1080px) and (min-width:720px) {
     .headerMain {
@@ -49,5 +55,9 @@
         height: 3vh;
         margin-right: 1vh;
         margin-left: 1vh;
+    }
+    .iconsDiv .socialIcon:hover {
+        width: 4vh;
+        height: 4vh;
     }
 }

@@ -10,10 +10,11 @@
     margin-left: 5%;
     padding-bottom: 5%;
     margin-bottom: 5%;
+    box-shadow: 7px 7px rgba(0, 0, 0, 0.8);
 }
 
 .projetoDiv {
-    background-color: aqua;
+    background-color: #d8d3e0;
     display: flexbox;
     align-items: center;
     flex-direction: column;
@@ -21,6 +22,7 @@
     margin-right: 10%;
     margin-top: 2%;
     border-radius: 50px;
+    border: 1px solid black;
 }
 
 .projetoDivButton {
