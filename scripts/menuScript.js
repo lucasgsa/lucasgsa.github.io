@@ -1,7 +1,8 @@
+var leftMenu = document.getElementById("menuSection");
+var iconMenu = document.getElementById("menuIcon");
+
 function showMenu(){
-    var leftMenu = document.getElementById("menuSection");
-    var iconMenu = document.getElementById("menuIcon");
-    if (leftMenu.style.marginLeft === "0px"){
+    if (menuIsOpen()){
         leftMenu.style.marginLeft = "-"+leftMenu.offsetWidth+"px";
         iconMenu.src = "images/iconMenu.png";
     }
@@ -10,6 +11,10 @@ function showMenu(){
         iconMenu.src = "images/iconMenuOpened.png";
 
     }
+}
+
+function menuIsOpen(){
+    return (leftMenu.style.marginLeft === "0px");
 }
 
 function alertNao() {
