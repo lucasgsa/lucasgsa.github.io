@@ -23,6 +23,8 @@ document.getElementById("button_musicPlayer").addEventListener("click", () => sw
 
 document.getElementById("button_geradorFrisos").addEventListener("click", () => switchArrow("geradorFrisos"));
 
+document.getElementById("button_2048").addEventListener("click", () => switchArrow("2048"));
+
 document.getElementById("button_classicPotatoBoss").addEventListener("click", () => switchArrow("classicPotatoBoss"));
 
 document.getElementById("button_pooPotatoBoss").addEventListener("click", () => switchArrow("pooPotatoBoss"));

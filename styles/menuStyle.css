@@ -6,7 +6,8 @@
     margin-left: -40%;
     transition: 1s;
     z-index: 1;
-    padding-top: 8vh;
+    padding-top: 4vh;
+    margin-top: -8vh;
     overflow: hidden;
 }
 
@@ -43,6 +44,7 @@
     #menuSection {
         width: 60%;
         margin-left: -60%;
+        margin-top: -5vh;
     }
     .btn {
         height: 100px;

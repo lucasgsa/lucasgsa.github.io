@@ -25,6 +25,12 @@ function scrollingTo(to){
     window.scrollTo(0, document.getElementById(to).offsetTop);
 }
 
+function hideMenuOnScroll(){
+    if (menuIsOpen()){
+        showMenu();
+    }
+}
+
 document.getElementById("btn_aboutMe").addEventListener("click", () => scrollingTo("sectionAboutMe"));
 
 //document.getElementById("btn_expMe").addEventListener("click", () => scrollingTo("div_experiencias"));
@@ -34,3 +40,5 @@ document.getElementById("btn_meusProjetos").addEventListener("click", () => scro
 
 
 document.getElementById("menuIcon").onclick = showMenu;
+
+document.addEventListener("scroll", hideMenuOnScroll);

@@ -10,7 +10,6 @@
     height: 8vh;
     justify-content: space-between;
     flex-direction: row;
-    z-index: 2;
     overflow: hidden;
     flex-wrap: wrap;
     transition: all 0.8s;
@@ -20,6 +19,7 @@
     width: 8vh;
     height: 8vh;
     cursor: pointer;
+    z-index: 3;
 }
 
 .headerMain .iconsDiv {
