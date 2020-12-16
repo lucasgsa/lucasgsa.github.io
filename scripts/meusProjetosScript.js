@@ -25,6 +25,8 @@ document.getElementById("button_geradorFrisos").addEventListener("click", () => 
 
 document.getElementById("button_2048").addEventListener("click", () => switchArrow("2048"));
 
+document.getElementById("button_discordBot").addEventListener("click", () => switchArrow("discordBot"));
+
 document.getElementById("button_classicPotatoBoss").addEventListener("click", () => switchArrow("classicPotatoBoss"));
 
 document.getElementById("button_pooPotatoBoss").addEventListener("click", () => switchArrow("pooPotatoBoss"));
