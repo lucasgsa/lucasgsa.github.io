@@ -1,5 +1,17 @@
+#titulo {
+    color: #333533;
+    font-size: 50px;
+    padding: 2%;
+}
+
+#subtitle {
+    color: #242423;
+    font-size: 30px;
+    text-align: center;  
+}
+
 #sectionMeusProjetos {
-    background-color: rgb(91, 91, 91);
+    background-color: #CFDBD5;
     height: 100%;
     width: 90%;
     display: flexbox;
@@ -10,43 +22,77 @@
     margin-left: 5%;
     padding-bottom: 5%;
     margin-bottom: 5%;
-    box-shadow: 7px 7px rgba(0, 0, 0, 0.8);
 }
 
 .projetoDiv {
-    background-color: #d8d3e0;
     display: flexbox;
     align-items: center;
     flex-direction: column;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 2%;
-    border-radius: 50px;
+    padding: 2%;
     border: 1px solid black;
 }
 
-.projetoDivButton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.titulo_projeto {
     font-size: 30px;
-    cursor: pointer;
+    color: #242423;
+    text-decoration: none;
 }
 
-.projetoDivButton img{
-    transition: all 0.8s;
+.resumo_projeto {
+    font-size: 20px;
+    color: #333533;
 }
 
-.projetoDivText {
+.body_projeto {
+    margin-top: 2%;
+}
+
+.detalhado_projeto {
+    color: #242423;
+    font-size: 20px;
+}
+
+.adicional_projeto {
+    color: #242423;
+    font-size: 15px;
     text-align: center;
-    height: 0px;
-    font-size: 0px;
-    padding-left: 3%;
-    padding-right: 3%;
+    margin-top: 1%;
 }
 
 @media only screen and (min-height:1080px) and (min-width:720px) {
-    .projetoDivButton {
-        font-size: 60px;
+    #titulo {
+        font-size: 70px;
+        padding: 5%;
+    }
+    
+
+    .titulo_projeto {
+        font-size: 70px;
+        color: #242423;
+        text-decoration: none;
+    }
+    
+    .resumo_projeto {
+        font-size: 40px;
+        color: #333533;
+    }
+    
+    .body_projeto {
+        margin-top: 5%;
+    }
+    
+    .detalhado_projeto {
+        color: #242423;
+        font-size: 40px;
+    }
+    
+    .adicional_projeto {
+        color: #242423;
+        font-size: 40px;
+        text-align: center;
+        margin-top: 1%;
     }
 }

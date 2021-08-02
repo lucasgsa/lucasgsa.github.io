@@ -16,7 +16,7 @@
     font-size: 30px;
     margin: 10%;
     padding: 5%;
-    background-color: rgb(135, 135, 135);
+    background-color: #868981;
     border-radius: 10px;
 }
 
@@ -25,7 +25,7 @@
     width: 80%;
     height: 50px;
     font-size: 16px;
-    background-color: #66cdaa;
+    background-color: #868981;
     color: black;
     border:0;
     cursor:pointer;
@@ -37,7 +37,7 @@
 }
 
 .btn:hover {
-    background-color: #3e8e41;
+    background-color: #242423;
 }
 
 @media only screen and (min-height:1080px) and (min-width:720px) {

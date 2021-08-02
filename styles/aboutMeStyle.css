@@ -26,7 +26,7 @@
     margin-right: 5%;
     margin-left: -5%;
     padding-left: 10%;
-    background-color: rgb(111, 111, 111);
+    background-color: #868981;
     border-top-right-radius: 100px;
     border-bottom-right-radius: 100px;
     margin-top: 15px;
@@ -48,12 +48,24 @@
     border-bottom-left-radius: 100px;
 }
 
+h2 {
+    font-size: 30px;
+    color: #242423;
+}
+
+h7 {
+    font-size: 25px;
+    color: #333533;
+}
+
 h3 {
     size: 10px;
+    color: #242423;
 }
 
 ul {
     margin-left: 4%;
+    color: #333533;
 }
 
 @media only screen and (min-height:1080px) and (min-width:720px) {
