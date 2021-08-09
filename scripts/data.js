@@ -1,3 +1,8 @@
+aniversario = {
+    'dia': 19,
+    'mes': 11,
+    'ano': 2001
+}
 projetos = [
     {
         "nome":"Dúvidas Discord BOT",
